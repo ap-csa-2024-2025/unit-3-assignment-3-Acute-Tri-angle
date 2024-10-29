@@ -9,10 +9,11 @@ public class Main
     System.out.println("ratio: input 2 ints, first int is numerator, 2nd int is denominator");
     int num1 = sc.nextInt();
     int num2 = sc.nextInt();
+    double ratio = (double) (num1) / num2;
     if (num2 == 0){
       System.out.println("error, you cant divide by 0 bucko");
     }
-    else if ((num1 / num2 > 1) && (num1 / num2 <= 8)){
+    else if ((ratio > 1) && (ratio <= 8)){
       System.out.println("ratio OK");
     }
     else{
@@ -43,6 +44,16 @@ public class Main
       System.out.println("thats not a number in the fifties!!! \nyour number is 55");
     }
 
+    //problem 4
+    System.out.println("x & y: input 2 ints");
+    int x = sc.nextInt();
+    int y = sc.nextInt();
+
+    if (!(y > 9) || (!(x <= 2) && (x * y > 10))){
+      System.out.println("u pass cuh");
+    }
+
+    //in class activity
     System.out.println("inclass: input dimensions in double of rectangle 1, len then width, same thing with rectangle 2");
     double lr1 = sc.nextDouble();
     double wr1 = sc.nextDouble();
